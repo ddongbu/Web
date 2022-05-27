@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style type="text/css">
-        table.test3 tr td{ border: solid 4pt green; padding : 2pt; background-color : fee;
-        text-align: center; color : blue; padding-left : 1em; padding-right : 1em;}
+    <style>
+        table, td {
+            border:1px solid #ccc;
+        }
+        td{
+            height:100px;
+            padding: 20px;
+        }
+        .val {vertical-align:top;}
+        .va2 {vertical-align:bottom;}
+        .va3 {vertical-align:middle;}
     </style>
 </head>
 <body>
-    <table border="1" class="test3">
-        <tr><td colspan="3"><b>제목</b></td></tr>
-        <tr><td>1행1열</td><td>1행2열</td><td>1행3열</td></tr>
-        <tr><td>1행1열</td><td>1행2열</td><td>1행3열</td></tr>
-        <tr><td>1행1열</td><td>1행2열</td><td>1행3열</td></tr>
-        <tr><td colspan="3">바닥글</td></tr>
+    <table>
+        <caption>vertical-alignment</caption>
+        <tr>
+        <td class="val1">alignment</td>
+        <td class="val2">alignment</td>
+        <td class="val3">alignment</td>
+    </tr>
+    </table>
 </body>
 </html>
